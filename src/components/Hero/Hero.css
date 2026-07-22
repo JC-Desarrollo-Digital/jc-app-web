@@ -1,0 +1,165 @@
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: white;
+    color: black;
+    gap: 50px;
+}
+
+
+/* CONTENIDO */
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: black;
+    margin-bottom: 25px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+
+/* BOTONES */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+.btn-primary,
+.btn-secondary {
+
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+
+}
+
+
+.btn-primary {
+
+    background: #0057ff;
+    color: white;
+
+}
+
+
+.btn-primary:hover {
+
+    background: #003bb5;
+
+}
+
+
+.btn-secondary {
+
+    border: 2px solid #0057ff;
+    color: #0057ff;
+
+}
+
+
+.btn-secondary:hover {
+
+    background: #0057ff;
+    color: white;
+
+}
+
+
+
+/* TARJETA */
+
+.hero-card {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.card {
+
+    width: 330px;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid #0057ff;
+    box-shadow: 0 10px 30px rgba(0, 87, 255, 0.2);
+
+}
+
+
+.card h2 {
+
+    color: #0057ff;
+    font-size: 28px;
+
+}
+
+
+.card p {
+
+    color: black;
+
+}
+
+
+/* CAJA DE CODIGO */
+
+.code-box {
+
+    margin-top: 25px;
+    background: #0057ff;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: monospace;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .hero{
+
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+
+    .hero h1{
+
+        font-size:40px;
+
+    }
+
+}
