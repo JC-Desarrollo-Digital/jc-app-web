@@ -1,0 +1,109 @@
+/* HEADER  */
+
+.header {
+  width: 100%;
+  height: 90px;
+
+  background: #0066cc;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 50px;
+  gap: 50px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,.25);
+}
+
+
+/* MARCA */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.logo-box {
+  width: 60px;
+  height: 60px;
+
+  background: white;
+  color: #0066cc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.brand-name h1 {
+  color: white;
+
+  font-size: 23px;
+
+  margin: 0;
+}
+
+
+.brand-name p {
+  color: white;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  margin-top: 5px;
+}
+
+
+
+/* MENU */
+
+.nav {
+  margin-left: auto;
+}
+
+
+.nav ul {
+
+  display: flex;
+
+  gap: 30px;
+
+}
+
+
+.nav a {
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  transition: .3s;
+
+}
+
+
+.nav a:hover {
+
+  color: #000;
+
+}
+
+
+.login-btn:hover {
+
+  background: #000;
+
+  color: white;
+
+}
