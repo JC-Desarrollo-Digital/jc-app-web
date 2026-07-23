@@ -1,27 +1,251 @@
 # jc-app-web
 
-Proyecto web colaborativo desarrollado por el equipo dual de JC Desarrollo Digital.
+Proyecto web colaborativo desarrollado por el equipo dual de **JC Desarrollo Digital**.
 
-Aplicación web construida con React, TypeScript y Vite como parte del proceso de desarrollo profesional con alumnos del programa dual CECyTEM.
+Aplicación web construida con **React, TypeScript y Vite** como parte del proceso de desarrollo profesional con alumnos del programa dual CECyTEM.
 
-## Tecnologías utilizadas
+# objetivo 
 
-- React
-- TypeScript
-- Vite
-- ESLint
-- Git / GitHub
+Proyecto desarrollado con fines educativos para el programa dual de **JC Desarrollo Digital**.
 
-## Requisitos del proyecto
+---
+
+# Tecnologías utilizadas
+
+* React
+* TypeScript
+* Vite
+* ESLint
+* Git / GitHub
+
+---
+
+# Requisitos del proyecto
 
 Antes de iniciar debes tener instalado:
 
-- Node.js 24 LTS
-- npm 11+
-- Git
+* Node.js 24 LTS
+* npm 11+
+* Git
 
-Verificar versiones:
+### Verificar versiones
 
 ```bash
 node -v
 npm -v
+git --version
+```
+
+### Instalar dependencias
+
+```bash
+npm install
+```
+
+### Ejecutar el proyecto
+
+```bash
+npm run dev
+```
+
+
+---
+
+# Estructura del proyecto
+
+```text
+jc-app-web/
+|
+|   >node_modules
+|   >public/
+|   >src/
+|    >components/
+|       ├── >Footer/
+|       ├── >Header/
+|       └── >Hero/
+|     App.tsx
+|     index.css
+|     main.tsx
+|
+|   .gitignore
+|   eslint.config.js
+|   index.html
+|   package.json
+|   package-lock.json
+|   README.md
+|   tsconfig.app.json
+|   tsconfig.json
+|   tsconfig.node.json
+|   vite.config.ts
+|
+package-lock.json
+```
+
+---
+
+# Información del proyecto
+
+| Campo                           | Información           |
+|---------------------------------|-----------------------|
+| Proyecto                        | jc-app-web            |
+| Empresa                         | JC Desarrollo Digital |
+| Estado                          | En desarrollo         |
+| Última actualización            | 23/07/2026            |
+| Responsable de la actualización | todo el equipo        |
+
+---
+
+# Historial de cambios
+
+## Cambio 1: Clonación del repositorio
+
+**Fecha**: 21/07/2026
+
+**Desarrollador**:Todo el equipo
+
+**Descripción:**
+
+- Se clonó el repositorio `jc-app-web` desde git hub a la terminal.
+- Se instaló el proyecto de forma local.
+- Se verificó que el proyecto ejecutara correctamente con Vite.
+- Se creó el entorno de trabajo para cada integrante.
+
+---
+
+## Cambio 2: Creación de ramas de trabajo
+
+**Fecha:** 22/07/2026
+
+**Desarrollador:** Todo el equipo
+
+**Descripción:**
+
+- Se actualizó la rama `develop`.
+- Cada integrante creó una rama `feature` para trabajar de forma independiente.
+- Se asignó un componente a cada integrante para evitar conflictos durante el desarrollo.
+
+**Ramas creadas:**
+
+- `feature/Header`
+- `feature/Hero`
+- `feature/Footer`
+
+---
+
+# objetivo 
+
+Proyecto desarrollado con fines educativos para el programa dual de **JC Desarrollo Digital**.
+
+# Integrantes del equipo
+|Nombre	    |   Rol	    | Rama de trabajo
+|           |           |
+|perla   	|frontend  	|feature/header
+|Alexys  	|Backend	|feature/footer
+|Alan   	|QA     	|feature/Hero 
+
+# Comandos utilizados durante el desarrollo
+
+Durante el desarrollo del proyecto se utilizaron los siguientes comandos para administrar el repositorio, ejecutar la aplicación y mantener actualizado el código.
+
+# Clonar el repositorio
+
+Permite descargar el proyecto desde GitHub al equipo local.
+
+```bash
+git clone https://github.com/JC-Desarrollo-Digital/jc-app-web.git
+```
+
+# Acceder a la carpeta del proyecto
+
+Ingresa al directorio donde se encuentra el proyecto.
+
+```bash
+cd jc-app-web
+```
+
+# Instalar dependencias
+
+Instala todas las librerías necesarias definidas en el archivo `package.json`.
+
+```bash
+npm install
+```
+
+# Ejecutar el proyecto
+
+Inicia el servidor de desarrollo para visualizar la aplicación en el navegador.
+
+```bash
+npm run dev
+```
+
+# Actualizar la rama develop
+
+Descarga los cambios más recientes de la rama principal de desarrollo.
+
+```bash
+git checkout develop
+git pull origin develop
+```
+
+# Crear una nueva rama de trabajo
+
+Cada integrante creó una rama independiente para desarrollar su componente.
+
+```bash
+git checkout -b feature/NombreDelComponente
+```
+
+**Ejemplo:**
+
+```bash
+git checkout -b feature/Hero
+```
+
+# Verificar el estado del repositorio
+
+Muestra los archivos modificados y pendientes de guardar.
+
+```bash
+git status
+```
+
+# Agregar cambios al área de preparación
+
+Agrega los archivos modificados para incluirlos en el siguiente commit.
+
+```bash
+git add .
+```
+
+# Crear un commit
+
+Guarda los cambios realizados con un mensaje descriptivo.
+
+```bash
+git commit -m "Se agrega componente Hero"
+```
+
+# Subir los cambios al repositorio remoto
+
+Envía los cambios de la rama al repositorio en GitHub.
+
+```bash
+git push origin feature/Hero
+```
+
+# Cambiar de rama
+
+Permite cambiar entre las diferentes ramas del proyecto.
+
+```bash
+git checkout develop
+```
+
+# Obtener los cambios más recientes
+
+Actualiza la rama local con los cambios disponibles en GitHub.
+
+```bash
+git pull origin develop
+```
