@@ -1,5 +1,7 @@
 import "./Footer.css";
+import JClogo from '../../assets/logos/JClogo.webp';
 
+export default Footer;
 function Footer() {
   return (
     <footer className="footer">
@@ -14,7 +16,7 @@ function Footer() {
           <p>9:00 a.m. - 2:00 p.m.</p>
 
           <h4>Blog</h4>
-          <a href="#">Tech Takes</a>
+          <a href="#">Casos de exito</a>
         </div>
 
         <div className="footer-col">
@@ -37,6 +39,10 @@ function Footer() {
           <h3>Mi Diseño</h3>
           <a href="#">Mi Cuenta</a>
           <a href="#">Mostrar avance</a>
+
+          <div className="footer-logo">
+            <img src={JClogo} alt="logo jc"/>
+          </div>
         </div>
 
         <div className="footer-col">
@@ -65,4 +71,3 @@ function Footer() {
   );
 }
 
-export default Footer;

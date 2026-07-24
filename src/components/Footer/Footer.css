@@ -1,6 +1,6 @@
 /* ===== FOOTER ===== */
 .footer {
-    background-color: #000;
+    background-color: #003bb5;
     color: #fff;
     padding: 50px 8%;
     border-top: 2px solid #fff;
@@ -51,6 +51,18 @@
     background-color: #fff;
     padding-left: 8px;
     border-radius: 4px;
+}
+
+/* footer-logo*/
+.footer-logo {
+    margin: 20px;
+}
+
+.footer-logo img {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
 }
 
 /* Redes sociales */
