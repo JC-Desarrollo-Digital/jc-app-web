@@ -1,12 +1,12 @@
 # jc-app-web
 
 Proyecto web colaborativo desarrollado por el equipo dual de **JC Desarrollo Digital**.
-
+# Descripcion del proyecto 
 Aplicación web construida con **React, TypeScript y Vite** como parte del proceso de desarrollo profesional con alumnos del programa dual CECyTEM.
 
 # objetivo 
 
-Proyecto desarrollado con fines educativos para el programa dual de **JC Desarrollo Digital**.
+Desarrollar una aplicación web moderna que represente los servicios y la identidad de JC Desarrollo Digital, aplicando buenas practicas de desarrollo, ademas el proyecto tiene como finalidad fortalecer las habilidades tecnicas de los alumnos del programa dual CECYTEM.
 
 ---
 
@@ -99,30 +99,15 @@ package-lock.json
 
 ## Cambio 1: Clonación del repositorio
 
-**Fecha**: 21/07/2026
-
-**Desarrollador**:Todo el equipo
-
-**Descripción:**
-
-- Se clonó el repositorio `jc-app-web` desde git hub a la terminal.
-- Se instaló el proyecto de forma local.
-- Se verificó que el proyecto ejecutara correctamente con Vite.
-- Se creó el entorno de trabajo para cada integrante.
+**Fecha:** 21/07/2026  
+**Descripción:** Se clonó el repositorio `jc-app-web`, se instaló el proyecto y se verificó su ejecución con Vite.
 
 ---
 
 ## Cambio 2: Creación de ramas de trabajo
 
-**Fecha:** 22/07/2026
-
-**Desarrollador:** Todo el equipo
-
-**Descripción:**
-
-- Se actualizó la rama `develop`.
-- Cada integrante creó una rama `feature` para trabajar de forma independiente.
-- Se asignó un componente a cada integrante para evitar conflictos durante el desarrollo.
+**Fecha:** 22/07/2026  
+**Descripción:** Se actualizó la rama `develop`, se crearon ramas `feature` y se asignaron componentes a cada integrante.
 
 **Ramas creadas:**
 
@@ -131,10 +116,6 @@ package-lock.json
 - `feature/Footer`
 
 ---
-
-# objetivo 
-
-Proyecto desarrollado con fines educativos para el programa dual de **JC Desarrollo Digital**.
 
 # Integrantes del equipo
 |Nombre	    |   Rol	    | Rama de trabajo
