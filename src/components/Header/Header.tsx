@@ -1,13 +1,14 @@
 import "./Header.css";
+import logo from "../../assets/logos/JCLogo.webp";
 
-function Header() {
+export default function Header() {
   return (
     <header className="header">
 
       <div className="brand">
 
         <div className="logo-box">
-          JC
+          <img src={logo} alt="JC Desarrollo Digital" />
         </div>
 
         <div className="brand-name">
@@ -20,10 +21,21 @@ function Header() {
 
       <nav className="nav">
         <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/proyectos">Proyectos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li>
+            <a href="/">Inicio</a>
+          </li>
+
+          <li>
+            <a href="/servicios">Servicios</a>
+          </li>
+
+          <li>
+            <a href="/proyectos">Proyectos</a>
+          </li>
+
+          <li>
+            <a href="/contacto">Contacto</a>
+          </li>
         </ul>
       </nav>
 
@@ -31,4 +43,4 @@ function Header() {
   );
 }
 
-export default Header;
+
