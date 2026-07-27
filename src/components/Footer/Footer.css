@@ -1,0 +1,157 @@
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #003bb5;
+    color: #fff;
+    padding: 50px 8%;
+    border-top: 2px solid #fff;
+}
+
+/* Contenedor */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Columnas */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+/* Títulos */
+.footer-col h3,
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Texto */
+.footer-col p {
+    color: #fff;
+    margin: 6px 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Enlaces */
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #000;
+    background-color: #fff;
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+/* footer-logo*/
+.footer-logo {
+    margin: 20px;
+}
+
+.footer-logo img {
+    width: 280px;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Redes sociales */
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Línea */
+.footer hr {
+    border: none;
+    border-top: 1px solid #fff;
+    margin: 35px 0;
+}
+
+/* Parte inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Links inferiores */
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .social-iconos {
+        justify-content: center;
+    }
+}
