@@ -109,6 +109,12 @@ package-lock.json
 **Fecha:** 22/07/2026  
 **Descripción:** Se actualizó la rama `develop`, se crearon ramas `feature` y se asignaron componentes a cada integrante.
 
+---
+## cambio 3: creacion de nuevas ramas de trabajo 
+**Fecha:** 27/07/2026  
+**Descripción:** se crean las ramas services , About, Contact para 
+comenzar con nuevos componentes del proyecto
+
 **Ramas creadas:**
 
 - `feature/Header`
