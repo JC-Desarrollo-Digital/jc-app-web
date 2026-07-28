@@ -10,8 +10,6 @@ function Footer() {
         <div className="footer-col">
           <h3>Contáctenos</h3>
           <p>7225668959</p>
-          <p>7224348447</p>
-          <p>7297208381</p>
           <p>Lunes - Viernes</p>
           <p>9:00 a.m. - 2:00 p.m.</p>
 
@@ -39,10 +37,10 @@ function Footer() {
           <h3>Mi Diseño</h3>
           <a href="#">Mi Cuenta</a>
           <a href="#">Mostrar avance</a>
+        </div>
 
-          <div className="footer-logo">
-            <img src={JClogo} alt="logo jc"/>
-          </div>
+        <div className="footer-logo">
+          <img src={JClogo} alt="logo jc"/>
         </div>
 
         <div className="footer-col">
