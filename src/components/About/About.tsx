@@ -7,7 +7,7 @@ export default function About() {
       <p>
         En JC Desarrollo Digital nos especializamos en el desarrollo de
         soluciones web modernas, ofreciendo servicios de diseño, desarrollo y
-        mantenimiento de sitios web adaptados a las necesidades de cada cliente.
+        mantenimiento de sitios web adaptados a las necesidades y expectativas  de cada cliente.
       </p>
 
       <h2>¿Por qué elegirnos?</h2>

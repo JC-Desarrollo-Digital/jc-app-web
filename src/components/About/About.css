@@ -53,5 +53,5 @@
 
 /*Efecto al pasar el cursor sobre cada ventaja*/
 .about li:hover {
-  transform: translateX(8px);
+  transform: translateX(9px);
 }
