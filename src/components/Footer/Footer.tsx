@@ -1,71 +1,74 @@
 import "./Footer.css";
-import JClogo from '../../assets/logos/JClogo.webp';
+import JClogo from "../../assets/logos/JClogo.webp";
+import FooterAccordion from "./FooterAccordion";
 
-export default Footer;
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
+
       <div className="footer-container">
 
-        <div className="footer-col">
-          <h3>Contáctenos</h3>
+        <FooterAccordion title="Contáctenos">
           <p>7225668959</p>
           <p>Lunes - Viernes</p>
           <p>9:00 a.m. - 2:00 p.m.</p>
 
           <h4>Blog</h4>
-          <a href="#">Casos de exito</a>
-        </div>
+          <a href="#">Casos de éxito</a>
+        </FooterAccordion>
 
-        <div className="footer-col">
-          <h3>Diseño de paginas</h3>
+
+        <FooterAccordion title="Diseño de páginas">
           <a href="#">Negocio propio</a>
           <a href="#">Empresa</a>
           <a href="#">Industria mayor</a>
-          <a href="#">Soporte tecnico</a>
-        </div>
+          <a href="#">Soporte técnico</a>
+        </FooterAccordion>
 
-        <div className="footer-col">
-          <h3>Atención al Cliente</h3>
+
+        <FooterAccordion title="Atención al Cliente">
           <a href="#">Sobre Nosotros</a>
           <a href="#">Soporte Técnico</a>
           <a href="#">Software y Controladores</a>
           <a href="#">Preguntas Frecuentes</a>
-        </div>
+        </FooterAccordion>
 
-        <div className="footer-col">
-          <h3>Mi Diseño</h3>
+
+        <FooterAccordion title="Mi Diseño">
           <a href="#">Mi Cuenta</a>
           <a href="#">Mostrar avance</a>
-        </div>
+        </FooterAccordion>
+
 
         <div className="footer-logo">
-          <img src={JClogo} alt="logo jc"/>
+          <img src={JClogo} alt="logo jc" />
         </div>
 
-        <div className="footer-col">
-          <h3>Mantente Conectado</h3>
 
+        <FooterAccordion title="Mantente Conectado">
           <div className="social-iconos">
             <a href="#">📘</a>
             <a href="#">▶️</a>
             <a href="#">❌</a>
           </div>
-        </div>
+        </FooterAccordion>
 
       </div>
+
 
       <hr />
 
       <div className="footer-bottom">
-        <p>© 2026 JC Desarrollo Web. Todos los derechos reservados.</p>
+        <p>
+          © 2026 JC Desarrollo Web. Todos los derechos reservados.
+        </p>
 
         <div className="footer-links">
           <a href="#">Términos</a>
           <a href="#">Privacidad</a>
         </div>
       </div>
+
     </footer>
   );
 }
-
