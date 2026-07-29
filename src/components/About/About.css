@@ -1,0 +1,57 @@
+/*  Contenedor principal de la sección About */
+.about {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f8fbff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  Título principal de la empresa */
+.about h1 {
+  text-align: center;
+  color: #0057ff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/*  Descripción de la empresa  */
+.about p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/*  Subtítulo "¿Por qué elegirnos?"  */
+.about h2 {
+  color: #0057ff;
+  margin-bottom: 15px;
+}
+
+/* Lista de ventajas competitivas  */
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada ventaja competitiva */
+.about li {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-left: 5px solid #0057ff;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+/*Efecto al pasar el cursor sobre cada ventaja*/
+.about li:hover {
+  transform: translateX(9px);
+}
