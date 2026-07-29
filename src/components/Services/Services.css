@@ -1,50 +1,190 @@
 .services {
-  padding: 60px 50px;
-  background: #f8f9fa;
-  text-align: center;
+
+    width: 100%;
+    padding: 70px 40px;
+    background: #f8f9fa;
+
 }
 
-.services h2 {
-  color: #569fe9;
-  font-size: 32px;
-  margin-bottom: 40px;
+
+/* TITULO */
+
+.services-header {
+
+    text-align: center;
+    margin-bottom: 50px;
+
 }
+
+
+.services-header h2 {
+
+    color: #0066cc;
+    font-size: 36px;
+    margin-bottom: 15px;
+
+}
+
+
+.services-header p {
+
+    color: #555;
+    font-size: 18px;
+
+}
+
+
+
+/* CONTENEDOR DE CARDS */
 
 .services-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+
+    display: grid;
+    grid-template-columns: 800px;
+    justify-content: center;
+    gap: 35px;
+
 }
+
+
+
+/* CARD */
 
 .service-card {
-  width: 300px;
-  background: white;
-  padding: 30px;
 
-  border-radius: 15px;
+    width: 900px;
+    min-height: 420px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: .3s;
+    display: flex;
+    align-items: center;
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-  transition: .3s;
 }
+
 
 .service-card:hover {
-  transform: translateY(-8px);
+
+    transform: translateY(-10px);
+
 }
 
-.service-icon {
-  font-size: 45px;
-  margin-bottom: 20px;
+
+
+/* IMAGEN */
+.service-image {
+
+    width: 55%;
+    height: 400px;
+    object-fit: contain;
+    background: white;
+
 }
 
-.service-card h3 {
-  color: #0066cc;
-  font-size: 22px;
-  margin-bottom: 15px;
+
+
+/* CONTENIDO */
+
+.service-content {
+
+    width: 45%;
+    padding: 35px;
+    text-align: left;
+
 }
 
-.service-card p {
-  color: #333;
-  line-height: 1.5;
+
+
+.service-content h3 {
+
+    color: #0066cc;
+    font-size: 26px;
+    margin-bottom: 15px;
+
+}
+
+
+
+.service-content p {
+
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* BOTON */
+
+.service-content button {
+
+    background: #0066cc;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+
+
+.service-content button:hover {
+
+    background: #004999;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:999px){
+
+
+    .services {
+
+        padding: 50px 20px;
+
+    }
+
+
+    .services-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .service-card {
+
+        width: 100%;
+        max-width: 500px;
+        display: block;
+
+    }
+
+
+
+    .service-image {
+
+        width: 100%;
+        height: 250px;
+
+    }
+
+
+
+    .service-content {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+
 }

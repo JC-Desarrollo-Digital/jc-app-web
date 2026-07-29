@@ -1,53 +1,100 @@
 import "./Services.css";
 
+import paginasWeb from "../../assets/servicios/jc-paginasweb.webp";
+import appsMovil from "../../assets/servicios/jc-appsmovil.webp";
+import servicioSaaS from "../../assets/servicios/jc-serviciosaas.webp";
+
+
 const Services = () => {
 
   const services = [
     {
-      icon: "🌐",
+      image: paginasWeb,
       title: "Desarrollo Web",
       description:
-        "Creamos sitios web modernos, funcionales y adaptados a las necesidades de cada negocio."
+        "Creamos páginas web modernas, rápidas y adaptadas a las necesidades de cada negocio."
     },
     {
-      icon: "📱",
+      image: appsMovil,
       title: "Aplicaciones Móviles",
       description:
         "Desarrollamos aplicaciones móviles intuitivas para mejorar la experiencia de los usuarios."
     },
     {
-      icon: "⚙️",
+      image: servicioSaaS,
       title: "Software a la Medida",
       description:
-        "Diseñamos sistemas personalizados que se adaptan a los procesos y objetivos de tu empresa."
+        "Diseñamos soluciones SaaS y sistemas personalizados para optimizar los procesos de tu empresa."
     }
   ];
 
+
   return (
+
     <section className="services">
 
-      <h2>Nuestros Servicios</h2>
+      <div className="services-header">
 
-      <div className="services-container">
+        <h2>
+          Nuestros Servicios
+        </h2>
 
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-
-            <div className="service-icon">
-              {service.icon}
-            </div>
-
-            <h3>{service.title}</h3>
-
-            <p>{service.description}</p>
-
-          </div>
-        ))}
+        <p>
+          Soluciones tecnológicas para impulsar tu negocio.
+        </p>
 
       </div>
 
+
+      <div className="services-container">
+
+        {
+          services.map((service, index) => (
+
+            <div 
+              className="service-card" 
+              key={index}
+            >
+
+              <img
+                src={service.image}
+                alt={service.title}
+                className="service-image"
+              />
+
+
+              <div className="service-content">
+
+                <h3>
+                  {service.title}
+                </h3>
+
+
+                <p>
+                  {service.description}
+                </p>
+
+
+                <button>
+                  Conocer más
+                </button>
+
+              </div>
+
+
+            </div>
+
+          ))
+        }
+
+      </div>
+
+
     </section>
+
   );
+
 };
+
 
 export default Services;
