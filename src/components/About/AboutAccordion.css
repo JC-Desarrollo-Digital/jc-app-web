@@ -1,0 +1,74 @@
+.about-accordion {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón principal del acordeón */
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border: none;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.accordion-header:hover {
+  background-color: #084298;
+}
+
+/* Flecha */
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+/* Rotación de la flecha cuando está abierto */
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Contenido desplegable */
+.accordion-content {
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 1px solid #ddd;
+}
+
+/* Lista dentro del contenido */
+.accordion-content ul {
+  padding-left: 20px;
+}
+
+.accordion-content li {
+  margin-bottom: 8px;
+}
+
+/* Responsive para celulares */
+@media (max-width: 768px) {
+
+  .accordion-header {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .accordion-content {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+}
