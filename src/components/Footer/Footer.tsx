@@ -8,7 +8,7 @@ export default function Footer() {
 
       <div className="footer-container">
 
-        <FooterAccordion title="Contáctenos">
+        <FooterAccordion title="Contáctanos">
           <p>7225668959</p>
           <p>Lunes - Viernes</p>
           <p>9:00 a.m. - 2:00 p.m.</p>
@@ -35,7 +35,7 @@ export default function Footer() {
 
 
         <FooterAccordion title="Mi Diseño">
-          <a href="#">Mi Cuenta</a>
+          <a href="#">Cuenta</a>
           <a href="#">Mostrar avance</a>
         </FooterAccordion>
 
