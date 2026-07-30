@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./AboutAccordion.css";
 
 interface AboutAccordionProps {
@@ -7,29 +7,59 @@ interface AboutAccordionProps {
 }
 
 export default function AboutAccordion({
-  title,
+  title, 
   children,
 }: AboutAccordionProps) {
-  const [isOpen, setIsOpen] = useState(false);
+
+  const[isMobile, setIsMobile] = useState (window.innerWidth <= 768);
+
+  const[isOpen, setIsOpen] = useState (!isMobile);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      const mobile = window.innerWidth <= 768;
+
+      setIsMobile(mobile);
+
+      //En computadoras siempre abiertos 
+      if(!mobile) {
+        setIsOpen(true);
+      }
+
+      //Al detectar el movil automaticamente se cierran 
+      if(mobile) {
+        setIsOpen(false)
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return() => window.removeEventListener("resize", handleResize);
+
+  }, []);
 
   return (
-    <div className="about-accordion">
-      <button
-        className="accordion-header"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+    <div className="About-accordion">
+      <button className="accordion-header"
+      onClick={() => isMobile && setIsOpen(!isOpen)}>
+
         <span>{title}</span>
 
-        <span className={isOpen ? "arrow open" : "arrow"}>
-          ▼
-        </span>
+        {isMobile && (
+          <span className={isOpen ? "arrow open" : "arrow"}>
+             ▼
+          </span>
+        )}
+
       </button>
 
-      {isOpen && (
+      {isOpen &&(
         <div className="accordion-content">
           {children}
-        </div>
+        </div>  
       )}
+    
     </div>
-  );
+  )
 }
