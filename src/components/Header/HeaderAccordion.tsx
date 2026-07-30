@@ -3,16 +3,21 @@ import "./HeaderAccordion.css";
 
 
 interface HeaderAccordionProps {
+
   children: React.ReactNode;
+
 }
 
 
 export default function HeaderAccordion({
+
   children,
+
 }: HeaderAccordionProps) {
 
 
   const [isOpen, setIsOpen] = useState(false);
+
 
 
   return (
@@ -21,13 +26,18 @@ export default function HeaderAccordion({
 
 
       <button
+
         className="menu-button"
+
         onClick={() => setIsOpen(!isOpen)}
+
       >
 
         ☰ Menú
 
+
       </button>
+
 
 
 
@@ -40,6 +50,7 @@ export default function HeaderAccordion({
         </div>
 
       )}
+
 
 
     </div>

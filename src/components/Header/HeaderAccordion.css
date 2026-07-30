@@ -5,23 +5,26 @@
 }
 
 
+
 .menu-button {
 
-  background: white;
 
-  color: #0066cc;
+  background:white;
 
-  border: none;
+  color:#0066cc;
 
-  padding: 10px 18px;
+  border:none;
 
-  border-radius: 8px;
+  padding:10px 18px;
 
-  font-size: 16px;
+  border-radius:8px;
 
-  font-weight: bold;
+  font-size:16px;
 
-  cursor: pointer;
+  font-weight:bold;
+
+  cursor:pointer;
+
 
 }
 
@@ -29,7 +32,9 @@
 
 .menu-button:hover {
 
-  background: #f1f1f1;
+
+  background:#f1f1f1;
+
 
 }
 
@@ -37,27 +42,29 @@
 
 .menu-content {
 
-  position: absolute;
 
-  right: 0;
+  position:absolute;
 
-  top: 50px;
+  right:0;
 
-  width: 180px;
+  top:50px;
 
-  background: white;
+  width:180px;
 
-  padding: 15px;
+  background:white;
 
-  border-radius: 8px;
+  padding:15px;
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  border-radius:8px;
 
-  display: flex;
+  box-shadow:0 5px 15px rgba(0,0,0,0.25);
 
-  flex-direction: column;
+  display:flex;
 
-  gap: 12px;
+  flex-direction:column;
+
+  gap:12px;
+
 
 }
 
@@ -65,11 +72,13 @@
 
 .menu-content a {
 
-  color: #0066cc;
 
-  text-decoration: none;
+  color:#0066cc;
 
-  font-weight: 500;
+  text-decoration:none;
+
+  font-weight:500;
+
 
 }
 
@@ -77,6 +86,8 @@
 
 .menu-content a:hover {
 
-  text-decoration: underline;
+
+  text-decoration:underline;
+
 
 }
