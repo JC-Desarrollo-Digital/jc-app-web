@@ -1,46 +1,81 @@
+import HeaderAccordion from "./HeaderAccordion";
 import "./Header.css";
-import logo from "../../assets/logos/JCLogo.webp";
 
 export default function Header() {
+
   return (
     <header className="header">
 
+
+      {/* LOGO Y NOMBRE */}
       <div className="brand">
 
         <div className="logo-box">
-          <img src={logo} alt="JC Desarrollo Digital" />
+          JC
         </div>
 
+
         <div className="brand-name">
-          <h1>JC Desarrollo Digital</h1>
-          <p>Soluciones Tecnológicas</p>
+
+          <h1>
+            JC Desarrollo Digital
+          </h1>
+
+          <p>
+            Soluciones Tecnológicas
+          </p>
+
         </div>
 
       </div>
 
 
-      <nav className="nav">
-        <ul>
-          <li>
-            <a href="/">Inicio</a>
-          </li>
 
-          <li>
-            <a href="/servicios">Servicios</a>
-          </li>
+      {/* MENU PC */}
+      <nav className="nav-menu">
 
-          <li>
-            <a href="/proyectos">Proyectos</a>
-          </li>
+        <a href="#">
+          Inicio
+        </a>
 
-          <li>
-            <a href="/contacto">Contacto</a>
-          </li>
-        </ul>
+        <a href="#">
+          Servicios
+        </a>
+
+        <a href="#">
+          Proyectos
+        </a>
+
+        <a href="#">
+          Contacto
+        </a>
+
       </nav>
+
+
+
+      {/* MENU MOVIL */}
+      <HeaderAccordion>
+
+        <a href="#">
+          Inicio
+        </a>
+
+        <a href="#">
+          Servicios
+        </a>
+
+        <a href="#">
+          Proyectos
+        </a>
+
+        <a href="#">
+          Contacto
+        </a>
+
+      </HeaderAccordion>
+
 
     </header>
   );
 }
-
-
