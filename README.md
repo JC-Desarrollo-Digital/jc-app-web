@@ -122,7 +122,24 @@ comenzar con nuevos componentes del proyecto
 - `feature/Footer`
 
 ---
+## cambio 4: correccion de errores del proyecto 
+**Fecha:** 28/07/2026  
+**Descripción:** se corrigen los errores frecuentes cometidos dentro del proyecto dentro de los nuevos componentes creados 
 
+---
+## cambio 5: uso de hooks dentro del proyecto 
+**Fecha:** 29/07/2026  
+**Descripción:** en cada componente se modifica el accordion para adaptarlo a
+escritotio o movil usando hooks dentro del proyecto 
+
+---
+## cambio 3: creacion de nuevas ramas de trabajo 
+**Fecha:** 31/07/2026  
+**Descripción:** se modifica los componentes hero, header y footer para pulir los detalles pequeños que tienen cada componente 
+
+
+
+---
 # Integrantes del equipo
 |Nombre	    |   Rol	    | Rama de trabajo
 |           |           |
