@@ -135,7 +135,7 @@ escritotio o movil usando hooks dentro del proyecto
 ---
 ## cambio 3: creacion de nuevas ramas de trabajo 
 **Fecha:** 31/07/2026  
-**Descripción:** se modifica los componentes hero, header y footer para pulir los detalles pequeños que tienen cada componente 
+**Descripción:** se modifica los componentes hero, header y footer para pulir los detalles pequeños que tienen cada componente.
 
 
 
