@@ -4,7 +4,7 @@ export default Contact;
 function Contact() {
   return (
     <section className="contact">
-      <h2>Contáctanos</h2>
+      <h2>Datos De Contacto</h2>
 
       <form>
         <label>Nombre</label>
@@ -19,7 +19,7 @@ function Contact() {
         <label>Ciudad</label>
         <input type="text" placeholder="Ingresa tu ciudad" />
 
-        <button type="submit">Contáctanos</button>
+        <button type="submit">Enviar Mensaje</button>
       </form>
     </section>
   );
