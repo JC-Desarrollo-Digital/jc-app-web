@@ -4,9 +4,16 @@
     align-items: center;
     justify-content: space-between;
     padding: 80px 10%;
-    background: white;
-    color: black;
     gap: 50px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://res.cloudinary.com/dgzghl0ur/image/upload/v1785514825/JC%20DESARROLLO/f0e6ca06-de03-4c8f-9723-c6878438fb14_mx9mqy.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 
@@ -20,16 +27,18 @@
 .hero h1 {
     font-size: 50px;
     line-height: 1.2;
-    color: black;
+    color: white;
     margin-bottom: 25px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 
 .hero p {
     font-size: 18px;
-    color: black;
+    color: #f5f5f5;
     line-height: 1.6;
     margin-bottom: 35px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -55,7 +64,7 @@
 
 .btn-primary {
 
-    background: #0057ff;
+    background: #083da8;
     color: white;
 
 }
@@ -63,22 +72,22 @@
 
 .btn-primary:hover {
 
-    background: #003bb5;
+    background: #083da8;
 
 }
 
 
 .btn-secondary {
 
-    border: 2px solid #0057ff;
-    color: #0057ff;
+    border: 2px solid #083da8;
+    color: #083da8;
 
 }
 
 
 .btn-secondary:hover {
 
-    background: #0057ff;
+    background: #083da8;
     color: white;
 
 }
@@ -96,28 +105,32 @@
 
 
 .card {
-
     width: 330px;
     padding: 35px;
-    background: white;
-    border-radius: 20px;
-    border: 2px solid #0057ff;
-    box-shadow: 0 10px 30px rgba(0, 87, 255, 0.2);
 
+    background: rgba(255, 255, 255, 0.15); /* transparente */
+    border-radius: 20px;
+
+     border: 2px solid #0066cc;
+
+    box-shadow: 0 15px 40px rgba(0, 87, 255, 0.35);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
 .card h2 {
 
-    color: #0057ff;
-    font-size: 28px;
+    color: #ffffff;
+    font-size: 35px;
 
 }
 
 
 .card p {
 
-    color: black;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -127,7 +140,7 @@
 .code-box {
 
     margin-top: 25px;
-    background: #0057ff;
+    background: #083da8;
     padding: 20px;
     border-radius: 10px;
     color: white;
