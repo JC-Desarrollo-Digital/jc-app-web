@@ -5,26 +5,18 @@ import FooterAccordion from "./FooterAccordion";
 export default function Footer() {
   return (
     <footer className="footer">
-
       <div className="footer-container">
-
         <FooterAccordion title="Contáctanos">
-          <p>7225668959</p>
+          <p>5544475622</p>
           <p>Lunes - Viernes</p>
           <p>9:00 a.m. - 2:00 p.m.</p>
-
-          <h4>Blog</h4>
-          <a href="#">Casos de éxito</a>
         </FooterAccordion>
-
 
         <FooterAccordion title="Diseño de páginas">
           <a href="#">Negocio propio</a>
           <a href="#">Empresa</a>
           <a href="#">Industria mayor</a>
-          <a href="#">Soporte técnico</a>
         </FooterAccordion>
-
 
         <FooterAccordion title="Atención al Cliente">
           <a href="#">Sobre Nosotros</a>
@@ -33,42 +25,34 @@ export default function Footer() {
           <a href="#">Preguntas Frecuentes</a>
         </FooterAccordion>
 
-
         <FooterAccordion title="Mi Diseño">
           <a href="#">Cuenta</a>
           <a href="#">Mostrar avance</a>
         </FooterAccordion>
 
-
-        <div className="footer-logo">
-          <img src={JClogo} alt="logo jc" />
+        <div className="footer-brand">
+          <div className="footer-logo">
+            <img src={JClogo} alt="logo jc" />
+          </div>
         </div>
 
-
-        <FooterAccordion title="Mantente Conectado">
-          <div className="social-iconos">
-            <a href="#">📘</a>
-            <a href="#">▶️</a>
-            <a href="#">❌</a>
-          </div>
-        </FooterAccordion>
-
+        <div className="social-iconos">
+          <a href="#">📘</a>
+          <a href="#">▶️</a>
+          <a href="#">❌</a>
+        </div>
       </div>
-
 
       <hr />
 
       <div className="footer-bottom">
-        <p>
-          © 2026 JC Desarrollo Web. Todos los derechos reservados.
-        </p>
+        <p>© 2026 JC Desarrollo Digital. Todos los derechos reservados.</p>
 
         <div className="footer-links">
           <a href="#">Términos</a>
           <a href="#">Privacidad</a>
         </div>
       </div>
-
     </footer>
   );
 }

@@ -1,3 +1,54 @@
+
+/* ===========================
+   VARIABLES GLOBALES
+=========================== */
+:root {
+  /* Colores principales */
+  --color-primary: #0066cc;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #60a5fa;
+
+  /* Colores secundarios */
+  --color-secondary: #14b8a6;
+  --color-secondary-dark: #0f766e;
+  --color-secondary-light: #5eead4;
+
+  /* Colores de apoyo */
+  --color-accent: #f59e0b;
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+
+  /* Escala de grises */
+  --color-white: #ffffff;
+  --color-light: #f8f9fa;
+  --color-gray: #6b7280;
+  --color-dark: #1f2937;
+  --color-black: #111827;
+
+  /* Texto */
+  --text-primary: var(--color-dark);
+  --text-secondary: var(--color-gray);
+  --text-light: var(--color-white);
+
+  /* Fondos */
+  --bg-primary: var(--color-white);
+  --bg-secondary: #f3f4f6;
+  --bg-dark: #111827;
+
+  /* Bordes */
+  --border-color: #e5e7eb;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* Transiciones */
+  --transition: all 0.3s ease;
+}
+
+
 * {
   margin: 0;
   padding: 0;

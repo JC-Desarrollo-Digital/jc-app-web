@@ -22,21 +22,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero-card">
-        <div className="card">
-          <h2>JC Desarrollo Digital</h2>
 
-          <p>Desarrollo | Diseño | Tecnología</p>
-
-          <div className="code-box">
-            {"<web>"}
-            <br />
-            &nbsp;&nbsp;Innovación Digital
-            <br />
-            {"</web>"}
-          </div>
-        </div>
-      </div>
+     
     </section>
   );
 }
