@@ -1,23 +1,43 @@
 import "./Contact.css";
 
-export default Contact;
-function Contact() {
+export default function Contact() {
   return (
     <section className="contact">
-      <h2>Cuentanos tu proyecto</h2>
+      <h2>Cuéntanos tu proyecto</h2>
 
       <form>
-        <label>Nombre</label>
-        <input type="text" placeholder="Ingresa tu nombre" />
+        <label htmlFor="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingresa tu nombre"
+        />
 
-        <label>Correo electrónico</label>
-        <input type="email" placeholder="Ingresa tu correo" />
+        <label htmlFor="correo">Correo electrónico</label>
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          placeholder="Ingresa tu correo"
+        />
 
-        <label>Teléfono</label>
-        <input type="tel" placeholder="Ingresa tu teléfono" />
+        <label htmlFor="telefono">Teléfono</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          placeholder="Ingresa tu teléfono"
+        />
 
-        <label>Ciudad</label>
-        <input type="text" placeholder="Ingresa tu ciudad" />
+        <label htmlFor="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Cuéntanos qué necesitas o describe tu proyecto"
+          rows={5}
+          required
+        />
 
         <button type="submit">Enviar Mensaje</button>
       </form>
