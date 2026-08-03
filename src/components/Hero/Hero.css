@@ -64,7 +64,7 @@
 
 .btn-primary {
 
-    background: #083da8;
+    background: #1d4ed8;
     color: white;
 
 }
@@ -72,24 +72,21 @@
 
 .btn-primary:hover {
 
-    background: #083da8;
-
+    background: #1d4ed8;
 }
 
 
 .btn-secondary {
-
-    border: 2px solid #083da8;
-    color: #083da8;
-
+    background: transparent;
+    border: 2px solid #1d4ed8;
+    color: #1d4ed8;
+    transition: all 0.3s ease;
 }
 
 
 .btn-secondary:hover {
-
-    background: #083da8;
-    color: white;
-
+    border-color: #2563eb;
+    color: #2563eb;
 }
 
 
@@ -140,7 +137,7 @@
 .code-box {
 
     margin-top: 25px;
-    background: #083da8;
+    background: #1d4ed8;
     padding: 20px;
     border-radius: 10px;
     color: white;
