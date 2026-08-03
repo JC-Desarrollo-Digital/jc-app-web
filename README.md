@@ -133,9 +133,9 @@ comenzar con nuevos componentes del proyecto
 escritotio o movil usando hooks dentro del proyecto 
 
 ---
-## cambio 3: creacion de nuevas ramas de trabajo 
-**Fecha:** 31/07/2026  
-**Descripción:** se modifica los componentes hero, header y footer para pulir los detalles pequeños que tienen cada componente.
+## cambio 6: Modificacion de Archivo README
+**Fecha:** 03/08/2026 
+**Descripción:** se modifica el archivo README con las nuevas actualizaciones del proyecto 
 
 
 
