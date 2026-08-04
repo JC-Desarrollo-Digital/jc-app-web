@@ -1,8 +1,8 @@
 # jc-app-web
 
-Proyecto web colaborativo desarrollado por el equipo dual de **JC Desarrollo Digital**.
+Proyecto web colaborativo desarrollado por el equipo dual de *JC Desarrollo Digital*.
 # Descripcion del proyecto 
-Aplicación web construida con **React, TypeScript y Vite** como parte del proceso de desarrollo profesional con alumnos del programa dual CECyTEM.
+Aplicación web construida con *React, TypeScript y Vite* como parte del proceso de desarrollo profesional con alumnos del programa dual CECyTEM.
 
 # objetivo 
 
@@ -30,30 +30,30 @@ Antes de iniciar debes tener instalado:
 
 ### Verificar versiones
 
-```bash
+bash
 node -v
 npm -v
 git --version
-```
+
 
 ### Instalar dependencias
 
-```bash
+bash
 npm install
-```
+
 
 ### Ejecutar el proyecto
 
-```bash
+bash
 npm run dev
-```
+
 
 
 ---
 
 # Estructura del proyecto
 
-```text
+text
 jc-app-web/
 |
 |   >node_modules
@@ -79,7 +79,7 @@ jc-app-web/
 |   vite.config.ts
 |
 package-lock.json
-```
+
 
 ---
 
@@ -99,24 +99,50 @@ package-lock.json
 
 ## Cambio 1: Clonación del repositorio
 
-**Fecha:** 21/07/2026  
-**Descripción:** Se clonó el repositorio `jc-app-web`, se instaló el proyecto y se verificó su ejecución con Vite.
+*Fecha:* 21/07/2026  
+*Descripción:* Se clonó el repositorio jc-app-web, se instaló el proyecto y se verificó su ejecución con Vite.
 
 ---
 
 ## Cambio 2: Creación de ramas de trabajo
 
-**Fecha:** 22/07/2026  
-**Descripción:** Se actualizó la rama `develop`, se crearon ramas `feature` y se asignaron componentes a cada integrante.
-
-**Ramas creadas:**
-
-- `feature/Header`
-- `feature/Hero`
-- `feature/Footer`
+*Fecha:* 22/07/2026  
+*Descripción:* Se actualizó la rama develop, se crearon ramas feature y se asignaron componentes a cada integrante.
 
 ---
+## cambio 3: creacion de nuevas ramas de trabajo 
+*Fecha:* 27/07/2026  
+*Descripción:* se crean las ramas services , About, Contact para 
+comenzar con nuevos componentes del proyecto
 
+*Ramas creadas:*
+
+- feature/Header
+- feature/Hero
+- feature/Footer
+
+---
+## cambio 4: correccion de errores del proyecto 
+*Fecha:* 28/07/2026  
+*Descripción:* se corrigen los errores frecuentes cometidos dentro del proyecto dentro de los nuevos componentes creados 
+
+---
+## cambio 5: uso de hooks dentro del proyecto 
+*Fecha:* 29/07/2026  
+*Descripción:* en cada componente se modifica el accordion para adaptarlo a
+escritotio o movil usando hooks dentro del proyecto 
+
+---
+## cambio 6: Modificacion de Archivo README
+*Fecha:* 03/08/2026 
+*Descripción:* se modifica el archivo README con las actualizaciones mas recientes del proyecto. 
+
+---
+## cambio 7: cambios dentro del proyecto 
+*Fecha:* 04/08/2026 
+*Descripción:* se hacen auditorias para ver que cambios serian los mejores para el proyecto
+
+---
 # Integrantes del equipo
 |Nombre	    |   Rol	    | Rama de trabajo
 |           |           |
@@ -132,101 +158,100 @@ Durante el desarrollo del proyecto se utilizaron los siguientes comandos para ad
 
 Permite descargar el proyecto desde GitHub al equipo local.
 
-```bash
+bash
 git clone https://github.com/JC-Desarrollo-Digital/jc-app-web.git
-```
+
 
 # Acceder a la carpeta del proyecto
 
 Ingresa al directorio donde se encuentra el proyecto.
 
-```bash
+bash
 cd jc-app-web
-```
+
 
 # Instalar dependencias
 
-Instala todas las librerías necesarias definidas en el archivo `package.json`.
+Instala todas las librerías necesarias definidas en el archivo package.json.
 
-```bash
+bash
 npm install
-```
+
 
 # Ejecutar el proyecto
 
 Inicia el servidor de desarrollo para visualizar la aplicación en el navegador.
 
-```bash
+bash
 npm run dev
-```
+
 
 # Actualizar la rama develop
 
 Descarga los cambios más recientes de la rama principal de desarrollo.
 
-```bash
+bash
 git checkout develop
 git pull origin develop
-```
+
 
 # Crear una nueva rama de trabajo
 
 Cada integrante creó una rama independiente para desarrollar su componente.
 
-```bash
+bash
 git checkout -b feature/NombreDelComponente
-```
 
-**Ejemplo:**
 
-```bash
+*Ejemplo:*
+
+bash
 git checkout -b feature/Hero
-```
+
 
 # Verificar el estado del repositorio
 
 Muestra los archivos modificados y pendientes de guardar.
 
-```bash
+bash
 git status
-```
+
 
 # Agregar cambios al área de preparación
 
 Agrega los archivos modificados para incluirlos en el siguiente commit.
 
-```bash
+bash
 git add .
-```
+
 
 # Crear un commit
 
 Guarda los cambios realizados con un mensaje descriptivo.
 
-```bash
+bash
 git commit -m "Se agrega componente Hero"
-```
+
 
 # Subir los cambios al repositorio remoto
 
 Envía los cambios de la rama al repositorio en GitHub.
 
-```bash
+bash
 git push origin feature/Hero
-```
+
 
 # Cambiar de rama
 
 Permite cambiar entre las diferentes ramas del proyecto.
 
-```bash
+bash
 git checkout develop
-```
+
 
 # Obtener los cambios más recientes
 
 Actualiza la rama local con los cambios disponibles en GitHub.
 
-```bash
+bash
 git pull origin develop
-```
