@@ -1,115 +1,102 @@
 .header {
   width: 100%;
-
-  height: 108px;
-
-  background: var(--color-primary);
-
+  height: 90px;
+  background: #0066cc;
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
-  padding: 0 80px;
-
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  padding: 0 40px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  position: relative;
+  z-index: 1000;
 }
 
-/* LOGO */
+
+/* LOGO + TEXTO */
 
 .brand {
   display: flex;
-
   align-items: center;
-
-  gap: 19px;
+  gap: 15px;
 }
 
-.logo-box {
-  width: 100px;
-
-  height: 100px;
-
-  background: var(--color-primary);
-
-  border-radius: 10px;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  overflow: hidden;
-}
 
 .logo-box img {
-  width: 200px;
-
-  height: 126px;
-
+  width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 
-/* TEXTO */
 
 .brand-name h1 {
   color: white;
-
-  font-size: 37px;
-
+  font-size: 32px;
   margin: 0;
+  font-weight: 700;
 }
+
 
 .brand-name p {
-  color: rgb(248, 247, 247);
-
-  font-size: 18px;
-
+  color: white;
   margin: 0;
+  font-size: 15px;
 }
+
+
 
 /* MENU PC */
 
 .nav-menu {
   display: flex;
-
-  gap: 80px;
+  gap: 30px;
 }
+
 
 .nav-menu a {
   color: white;
-
   text-decoration: none;
-
-  font-weight: 500;
-
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
-/* ACORDEON */
+
+
+/* OCULTAR ACORDEON EN PC */
 
 .header-accordion {
   display: none;
-
-  position: relative;
 }
+
+
 
 /* RESPONSIVE */
 
-@media (max-width: 999px) {
-  .header {
-    height: auto;
+@media(max-width:999px){
 
-    padding: 15px 20px;
+  .header{
+    height: 85px;
+    padding: 0 20px;
   }
 
-  .nav-menu {
-    display: none;
+
+  .logo-box img{
+    width: 55px;
+    height:55px;
   }
 
-  .header-accordion {
-    display: block;
+
+  .brand-name h1{
+    font-size: 24px;
   }
+
+
+  .nav-menu{
+    display:none;
+  }
+
+
+  .header-accordion{
+    display:block;
+  }
+
 }
