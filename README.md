@@ -135,7 +135,7 @@ escritotio o movil usando hooks dentro del proyecto
 ---
 ## cambio 6: Modificacion de Archivo README
 **Fecha:** 03/08/2026 
-**Descripción:** se modifica el archivo README con las nuevas actualizaciones del proyecto 
+**Descripción:** se modifica el archivo README con las actualizaciones mas recientes del proyecto, 
 
 
 
