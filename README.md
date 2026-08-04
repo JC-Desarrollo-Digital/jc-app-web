@@ -140,7 +140,7 @@ escritotio o movil usando hooks dentro del proyecto
 ---
 ## cambio 7: cambios dentro del proyecto 
 **Fecha:** 04/08/2026 
-**Descripción:** se hacen auditorias para ver que cambios serian los mejores para el proyecto. 
+**Descripción:** se hacen auditorias para ver que cambios serian los mejores para el proyecto
 
 ---
 # Integrantes del equipo
