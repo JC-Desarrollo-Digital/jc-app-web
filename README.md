@@ -138,8 +138,8 @@ escritotio o movil usando hooks dentro del proyecto
 **Descripción:** se modifica el archivo README con las actualizaciones mas recientes del proyecto. 
 
 ---
-## cambio 7: camibios dentro del proyecto 
-**Fecha:** 03/08/2026 
+## cambio 7: cambios dentro del proyecto 
+**Fecha:** 04/08/2026 
 **Descripción:** se hacen auditorias para ver que cambios serian los mejores para el proyecto. 
 
 ---
