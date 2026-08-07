@@ -4,6 +4,7 @@ import paginasWeb from "../../assets/servicios/jc-paginasweb.webp";
 import appsMovil from "../../assets/servicios/jc-appsmovil.webp";
 import servicioSaaS from "../../assets/servicios/jc-serviciosaas.webp";
 
+import ScrollFloat from "../react-bits/ScrollFloat";
 
 const Services = () => {
 
@@ -35,10 +36,11 @@ const Services = () => {
 
       <div className="services-header">
 
-        <h2>
-          Nuestros Servicios
-        </h2>
-
+        
+          <ScrollFloat>
+              Nuestros Servicios
+          </ScrollFloat>
+      
         <p>
           Soluciones tecnológicas para impulsar tu negocio.
         </p>

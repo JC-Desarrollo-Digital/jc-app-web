@@ -33,7 +33,7 @@ const ScrollFloat: React.FC<ScrollFloatProps> = ({
   const containerRef = useRef<HTMLHeadingElement>(null);
 
   const splitText = useMemo(() => {
-    const text = typeof children === 'string' ? children : '';
+    const text = String(children);
     return text.split('').map((char, index) => (
       <span className="char" key={index}>
         {char === ' ' ? '\u00A0' : char}
