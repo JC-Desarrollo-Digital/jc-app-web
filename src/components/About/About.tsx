@@ -1,11 +1,14 @@
 import AboutAccordion from "./AboutAccordion";
 import "./About.css";
+import ScrollFloat from "../react-bits/ScrollFloat";
 
 export default function About() {
   return (
     <section className="about">
-      <h1>JC Desarrollo Digital</h1>
-
+      <ScrollFloat>
+        JC Desarrollo Digital
+      </ScrollFloat>
+      
       <p>
         En JC Desarrollo Digital nos especializamos en el desarrollo de
         soluciones web modernas, ofreciendo servicios de diseño, desarrollo y
