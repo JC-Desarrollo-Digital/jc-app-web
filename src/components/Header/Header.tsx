@@ -1,5 +1,5 @@
 import HeaderAccordion from "./HeaderAccordion";
-import logo from "../../assets/logos/JCLogo.webp";
+import logo from "../../assets/logos/JClogo.webp";
 import "./Header.css";
 
 export default function Header() {
