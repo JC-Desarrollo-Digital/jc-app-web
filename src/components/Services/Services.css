@@ -1,190 +1,340 @@
+
+/* =========================
+   SERVICES
+========================= */
+
 .services {
-
-    width: 100%;
-    padding: 70px 40px;
-    background: #f8f9fa;
-
+  width: 100%;
+  padding: 120px 6%;
+  background: #f8f9fa;
+  color: #222;
 }
 
 
-/* TITULO */
+/* =========================
+   HEADER
+========================= */
 
 .services-header {
-
-    text-align: center;
-    margin-bottom: 50px;
-
+  width: min(1000px, 100%);
+  margin: 0 auto 130px;
+  text-align: center;
 }
 
+.services-eyebrow {
+  display: block;
+  margin-bottom: 25px;
 
-.services-header h2 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
 
-    color: #0066cc;
-    font-size: 36px;
-    margin-bottom: 15px;
-
+  color: #0066cc;
 }
-
 
 .services-header p {
+  max-width: 600px;
+  margin: 30px auto 0;
 
-    color: #555;
-    font-size: 18px;
-
+  color: #666;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 
-
-/* CONTENEDOR DE CARDS */
+/* =========================
+   CONTENEDOR
+========================= */
 
 .services-container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
 
-    display: grid;
-    grid-template-columns: 800px;
-    justify-content: center;
-    gap: 35px;
-
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
 }
 
 
+/* =========================
+   SERVICE
+========================= */
 
-/* CARD */
+.service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
 
-.service-card {
+  position: relative;
+}
 
-    width: 900px;
-    min-height: 420px;
-    background: white;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: .3s;
-    display: flex;
-    align-items: center;
+.service-reverse {
+  direction: rtl;
+}
 
+.service-reverse .service-content {
+  direction: ltr;
 }
 
 
-.service-card:hover {
+/* =========================
+   VISUAL
+========================= */
 
-    transform: translateY(-10px);
+.service-visual {
+  position: relative;
 
+  width: 100%;
+  min-height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+  border-radius: 30px;
+
+  overflow: hidden;
 }
 
-
-
-/* IMAGEN */
 .service-image {
+  width: 100%;
+  height: 500px;
 
-    width: 55%;
-    height: 400px;
-    object-fit: contain;
-    background: white;
+  object-fit: contain;
 
+  transition: transform 0.6s ease;
+}
+
+.service:hover .service-image {
+  transform: scale(1.04);
 }
 
 
+/* NUMERO */
 
-/* CONTENIDO */
+.service-number {
+  position: absolute;
+
+  top: 25px;
+  left: 30px;
+
+  z-index: 2;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #0066cc;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
 
 .service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-    width: 45%;
-    padding: 35px;
-    text-align: left;
+.service-label {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #999;
+}
+
+.service-content h2 {
+  margin: 0 0 25px;
+
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 0.95;
+  font-weight: 700;
+
+  color: #222;
+}
+
+.service-description {
+  max-width: 500px;
+
+  margin: 0 0 35px;
+
+  color: #555;
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.service-features {
+  width: 100%;
+  max-width: 500px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid #ddd;
+}
+
+.service-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 15px 5px;
+
+  border-bottom: 1px solid #ddd;
+
+  color: #444;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.feature-icon {
+  color: #0066cc;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.service-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 35px;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  color: #222;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: gap 0.3s ease;
+}
+
+.service-button span {
+  font-size: 20px;
+  color: #0066cc;
+}
+
+.service-button:hover {
+  gap: 28px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .services {
+    padding: 90px 25px;
+  }
+
+  .services-header {
+    margin-bottom: 90px;
+  }
+
+  .services-container {
+    gap: 110px;
+  }
+
+  .service,
+  .service-reverse {
+    grid-template-columns: 1fr;
+    gap: 45px;
+
+    direction: ltr;
+  }
+
+  .service-visual {
+    min-height: auto;
+  }
+
+  .service-image {
+    height: auto;
+    min-height: 350px;
+  }
+
+  .service-content h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
 
 }
 
 
+/* =========================
+   MOBILE
+========================= */
 
-.service-content h3 {
+@media (max-width: 600px) {
 
-    color: #0066cc;
-    font-size: 26px;
-    margin-bottom: 15px;
+  .services {
+    padding: 70px 20px;
+  }
 
-}
+  .services-header {
+    margin-bottom: 70px;
+  }
 
+  .services-header p {
+    font-size: 16px;
+  }
 
+  .services-container {
+    gap: 90px;
+  }
 
-.service-content p {
+  .service {
+    gap: 35px;
+  }
 
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  .service-visual {
+    border-radius: 20px;
+  }
 
-}
+  .service-image {
+    min-height: 280px;
+  }
 
+  .service-number {
+    top: 18px;
+    left: 20px;
+  }
 
+  .service-description {
+    font-size: 16px;
+  }
 
-/* BOTON */
+  .service-features {
+    grid-template-columns: 1fr;
+  }
 
-.service-content button {
-
-    background: #0066cc;
-    color: white;
-    border: none;
-    padding: 12px 28px;
-    border-radius: 25px;
-    cursor: pointer;
-
-}
-
-
-
-.service-content button:hover {
-
-    background: #004999;
-
-}
-
-
-
-/* RESPONSIVE */
-
-@media(max-width:999px){
-
-
-    .services {
-
-        padding: 50px 20px;
-
-    }
-
-
-    .services-container {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-
-    .service-card {
-
-        width: 100%;
-        max-width: 500px;
-        display: block;
-
-    }
-
-
-
-    .service-image {
-
-        width: 100%;
-        height: 250px;
-
-    }
-
-
-
-    .service-content {
-
-        width: 100%;
-        text-align: center;
-
-    }
-
+  .service-feature {
+    padding: 13px 0;
+  }
 
 }
+

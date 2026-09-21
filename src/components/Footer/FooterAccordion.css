@@ -1,6 +1,6 @@
 .footer-accordion {
   width: 100%;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Botón del título */
@@ -24,11 +24,9 @@
   transition: 0.3s ease;
 }
 
-
 .footer-accordion-header:hover {
   color: #1e90ff;
 }
-
 
 /* Flecha */
 .arrow {
@@ -36,11 +34,9 @@
   transition: transform 0.3s ease;
 }
 
-
 .arrow.open {
   transform: rotate(180deg);
 }
-
 
 /* Contenido cuando abre */
 .footer-accordion-content {
@@ -53,7 +49,6 @@
   animation: showAccordion 0.3s ease;
 }
 
-
 .footer-accordion-content a,
 .footer-accordion-content p {
   color: #ddd;
@@ -61,15 +56,12 @@
   font-size: 15px;
 }
 
-
 .footer-accordion-content a:hover {
   color: white;
 }
 
-
 /* Animación */
 @keyframes showAccordion {
-
   from {
     opacity: 0;
     transform: translateY(-10px);
@@ -79,5 +71,4 @@
     opacity: 1;
     transform: translateY(0);
   }
-
 }

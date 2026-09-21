@@ -1,57 +1,224 @@
-/*  Contenedor principal de la sección About */
+/* =========================
+   ABOUT
+========================= */
+
 .about {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #f8fbff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: min(1100px, 90%);
+  margin: 100px auto;
+  padding: 100px 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/*  Título principal de la empresa */
-.about h1 {
-  text-align: center;
-  color: #0057ff;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-/*  Descripción de la empresa  */
-.about p {
   color: #333;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  text-align: justify;
-  margin-bottom: 30px;
 }
 
-/*  Subtítulo "¿Por qué elegirnos?"  */
-.about h2 {
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.about-header {
+  margin-bottom: 80px;
+}
+
+.about-label {
+  display: block;
+  margin-bottom: 25px;
+
   color: #0057ff;
-  margin-bottom: 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
-/* Lista de ventajas competitivas  */
-.about ul {
-  list-style: none;
-  padding: 0;
+
+/* Título grande */
+
+.about-title {
+  max-width: 950px;
+
+  color: #0057ff;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
 }
 
-/* Cada ventaja competitiva */
-.about li {
-  background: #ffffff;
-  margin-bottom: 15px;
-  padding: 15px 20px;
-  border-left: 5px solid #0057ff;
-  border-radius: 8px;
+
+/* =========================
+   TEXTO
+========================= */
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+
+  max-width: 950px;
+  margin-left: auto;
+  margin-bottom: 110px;
+}
+
+
+/* Texto principal */
+
+.about-intro {
+  margin: 0;
+
   color: #333;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+
+/* Texto secundario */
+
+.about-description {
+  margin: 0;
+
+  color: #555;
   font-size: 1rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
+  line-height: 1.8;
 }
 
-/*Efecto al pasar el cursor sobre cada ventaja*/
-.about li:hover {
-  transform: translateX(9px);
+
+/* =========================
+   VALORES
+========================= */
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid rgba(0, 87, 255, 0.2);
+}
+
+
+/* Cada bloque */
+
+.about-values article {
+  padding: 35px 30px 20px 0;
+
+  border-right: 1px solid rgba(0, 87, 255, 0.2);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+/* Separación de los siguientes bloques */
+
+.about-values article:not(:first-child) {
+  padding-left: 30px;
+}
+
+
+/* Último bloque */
+
+.about-values article:last-child {
+  border-right: none;
+}
+
+
+/* Número */
+
+.about-values span {
+  display: block;
+  margin-bottom: 55px;
+
+  color: #0057ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+
+/* Título */
+
+.about-values h3 {
+  margin: 0 0 15px;
+
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+
+/* Descripción */
+
+.about-values p {
+  max-width: 280px;
+  margin: 0;
+
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.about-values article:hover {
+  transform: translateY(-6px);
+}
+
+.about-values article:hover span {
+  color: #003dcc;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .about {
+    width: 88%;
+    margin: 70px auto;
+    padding: 60px 0;
+  }
+
+  .about-header {
+    margin-bottom: 55px;
+  }
+
+  .about-title {
+    font-size: clamp(2.8rem, 14vw, 5rem);
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    margin-bottom: 80px;
+  }
+
+  .about-intro {
+    font-size: 1.6rem;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values article,
+  .about-values article:not(:first-child) {
+    padding: 30px 0;
+
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 87, 255, 0.2);
+  }
+
+  .about-values article:last-child {
+    border-bottom: none;
+  }
+
+  .about-values span {
+    margin-bottom: 25px;
+  }
 }

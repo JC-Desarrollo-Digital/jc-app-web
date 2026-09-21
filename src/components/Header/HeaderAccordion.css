@@ -1,44 +1,28 @@
 .header-accordion {
-
   position: relative;
-
 }
-
-
 
 .menu-button {
+  background: white;
 
+  color: #0066cc;
 
-  background:white;
+  border: none;
 
-  color:#0066cc;
+  padding: 10px 18px;
 
-  border:none;
+  border-radius: 8px;
 
-  padding:10px 18px;
+  font-size: 16px;
 
-  border-radius:8px;
+  font-weight: bold;
 
-  font-size:16px;
-
-  font-weight:bold;
-
-  cursor:pointer;
-
-
+  cursor: pointer;
 }
-
-
 
 .menu-button:hover {
-
-
-  background:#f1f1f1;
-
-
+  background: #f1f1f1;
 }
-
-
 
 .menu-content {
   position: absolute;
@@ -50,7 +34,7 @@
   padding: 15px;
   border-radius: 8px;
 
-  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 
   display: flex;
   flex-direction: column;
@@ -59,26 +43,14 @@
   z-index: 1000;
 }
 
-
-
 .menu-content a {
+  color: #0066cc;
 
+  text-decoration: none;
 
-  color:#0066cc;
-
-  text-decoration:none;
-
-  font-weight:500;
-
-
+  font-weight: 500;
 }
 
-
-
 .menu-content a:hover {
-
-
-  text-decoration:underline;
-
-
+  text-decoration: underline;
 }

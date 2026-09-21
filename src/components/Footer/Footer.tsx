@@ -2,44 +2,52 @@ import "./Footer.css";
 import JClogo from "../../assets/logos/JClogo.webp";
 import FooterAccordion from "./FooterAccordion";
 
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <FooterAccordion title="Contáctanos">
-          <p>5544475622</p>
-          <p>Lunes - Viernes</p>
-          <p>9:00 a.m. - 2:00 p.m.</p>
+          {" "}
+          <p>5544475622</p> <p>Lunes - Viernes</p> <p>9:00 a.m. - 2:00 p.m.</p>{" "}
         </FooterAccordion>
-
-        <FooterAccordion title="Diseño de páginas">
-          <a href="#">Negocio propio</a>
-          <a href="#">Empresa</a>
-          <a href="#">Industria mayor</a>
-        </FooterAccordion>
-
-        <FooterAccordion title="Atención al Cliente">
-          <a href="#">Sobre Nosotros</a>
+        {/**
+        <FooterAccordion title="Soporte">
           <a href="#">Soporte Técnico</a>
-          <a href="#">Software y Controladores</a>
-          <a href="#">Preguntas Frecuentes</a>
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
         </FooterAccordion>
-
-        <FooterAccordion title="Mi Diseño">
-          <a href="#">Cuenta</a>
-          <a href="#">Mostrar avance</a>
+ */}
+        <FooterAccordion title="Servicios">
+          <a href="#">Páginas Web</a>
+          <a href="#">Aplicaciones Móviles</a>
+          <a href="#">Software a la Medida</a>
         </FooterAccordion>
-
         <div className="footer-brand">
           <div className="footer-logo">
-            <img src={JClogo} alt="logo jc" />
+            <img src={JClogo} alt="JC Desarrollo Digital" />
           </div>
-        </div>
 
-        <div className="social-iconos">
-          <a href="#">📘</a>
-          <a href="#">▶️</a>
-          <a href="#">❌</a>
+          <div className="social-iconos">
+            <a
+              href="https://www.instagram.com/jc.desarrollo.digital?stkn=MXMxemV2a2JjcHZ0bQ=="
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://wa.me/5215544475622?text=Hola%20JC%20Desarrollo%20Digital,%20me%20interesa%20conocer%20sus%20servicios."
+              aria-label="WhatsApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
+          </div>
         </div>
       </div>
 
