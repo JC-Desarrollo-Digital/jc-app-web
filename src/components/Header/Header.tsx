@@ -35,11 +35,11 @@ export default function Header() {
       <HeaderAccordion>
         <a href="#">Inicio</a>
 
-        <a href="#">Servicios</a>
+        <a href="#services">Servicios</a>
 
         <a href="#">Proyectos</a>
 
-        <a href="#">Contacto</a>
+        <a href="#contact">Contacto</a>
       </HeaderAccordion>
     </header>
   );
