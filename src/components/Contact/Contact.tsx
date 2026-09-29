@@ -45,7 +45,7 @@ ${formData.mensaje}
   };
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="contact-background">
         <ColorBends />
       </div>
